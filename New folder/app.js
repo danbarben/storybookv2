@@ -24,6 +24,8 @@ function displayStory({ story, options, audioUrl }) {
     btn.onclick = () => sendChoice(opt);
     app.appendChild(btn);
   });
-  const audio = new Audio(audioUrl);
-  audio.play();
+  if (audioUrl) {
+    const audio = new Audio(audioUrl);
+    audio.play();
+  }
 }
