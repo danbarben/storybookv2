@@ -6,7 +6,7 @@ function startStory(id) {
 }
 
 async function sendChoice(choice) {
-  const res = await fetch("https://f558c3ca-3754-4fe8-8d9d-7e9b80b44765-00-6vb9q4wju81e.spock.replit.dev/story", {
+  const res = await fetch("https://f558c3ca-3754-4fe8-8d9d-7e9b80b44765-00-6vb9q4wju81e.spock.replit.dev/", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ choice })
